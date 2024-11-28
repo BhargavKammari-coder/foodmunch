@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+
+    <style>
+      .modal_container {
+          display: none;
+          position: fixed;
+          justify-content: center;
+          align-items: center;
+          margin-top: 50px;
+          background-color: rgb(236, 206, 191);
+          width:80px;
+          margin-left:50px;
+      }
+      .modal_button_left {
+          padding: 10px 20px;
+          font-size: 20px;
+          margin: 0 10px;
+          background-color: rgb(232, 57, 13);
+          border:none;
+          outline:none;
+          border-top-left-radius: 12px;
+          border-bottom-left-radius: 12px;
+      }
+      .modal_button_right {
+          padding: 10px 20px;
+          font-size: 20px;
+          margin: 0 10px;
+          background-color: rgb(232, 57, 13);
+          border:none;
+          outline:none;
+          border-top-right-radius: 12px;
+          border-bottom-right-radius: 12px;
+      }
+      .modal_value {
+          font-size: 20px;
+          padding: 0 10px;
+      }
+  </style>
+    
+  </head>
+  <body>
+
+<div id="sectionSalads">
+    <div class="non-starters-bg-container w-100 h-100">
+      <div class="container">
+        <div class="row">
+          <h1 class="col-12 text-center Non_Starters_heading">SALADS    <span>  
+            <img class="char_image"src="food items/Salads/download.png"></span></h1>
+          
+            <div class="col-12 col-md-6 col-lg-3 product">
+              <div style="background-color: rgb(236, 229, 226);"class="shadow menu-item-card p-3 mb-3">
+                <img
+                  src="food items/Salads/Fluffy Salad.webp"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="inside-menu-card-title">Fluffy Salad</h1>
+                <p>Price : <span style="text-decoration: line-through; ">250</span>/-  <span style="color:rgba(60, 232, 25, 0.957);font-size:15px;font-weight:bold;">20% off</span></p>
+                <p>Deal Price : <span style="color:rgb(219, 146, 11) ;">200</span>/-</p>
+                <!-- Button trigger modal -->
+                <button id="kebabButton"class="inside-menu-card-link"  data-toggle="modal" data-target="#myModal">
+                  Add to cart
+                </button>              
+                
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 product">
+              <div style="background-color: rgb(236, 229, 226);"class="shadow menu-item-card p-3 mb-3">
+                <img
+                  src="food items/Salads/Citrus-and-Pomegranate-Salad.webp"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="inside-menu-card-title">Citrus and Pomegranate Salad</h1>
+                <p>Price : <span style="text-decoration: line-through; ">250</span>/-  <span style="color:rgba(60, 232, 25, 0.957);font-size:15px;font-weight:bold;">20% off</span></p>
+                <p>Deal Price : <span style="color:rgb(219, 146, 11) ;">200</span>/-</p>
+                <!-- Button trigger modal -->
+<button type="button" class="inside-menu-card-link" data-toggle="modal" data-target="#myModal">
+Add to cart
+</button>
+              
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 product">
+              <div style="background-color: rgb(236, 229, 226);"class="shadow menu-item-card p-3 mb-3">
+                <img
+                  src="food items/Salads/Autumn Waldorf Salad.webp"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="inside-menu-card-title">Autumn Waldorf Salad</h1>
+                <p>Price : <span style="text-decoration: line-through; ">250</span>/-  <span style="color:rgba(60, 232, 25, 0.957);font-size:15px;font-weight:bold;">20% off</span></p>
+                <p>Deal Price : <span style="color:rgb(219, 146, 11) ;">200</span>/-</p>
+                <!-- Button trigger modal -->
+<button type="button" class="inside-menu-card-link" data-toggle="modal" data-target="#myModal">
+Add to cart
+</button>
+
+
+                
+                  
+                  
+                
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 product">
+              <div style="background-color: rgb(236, 229, 226);"class="shadow menu-item-card p-3 mb-3">
+                <img
+                  src="food items/Salads/creamy cranberry salad.webp"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="inside-menu-card-title">Creamy Cranberry Salad</h1>
+                <p>Price : <span style="text-decoration: line-through; ">250</span>/-  <span style="color:rgba(60, 232, 25, 0.957);font-size:15px;font-weight:bold;">20% off</span></p>
+                <p>Deal Price : <span style="color:rgb(219, 146, 11) ;">200</span>/-</p>
+                <!-- Button trigger modal -->
+<button type="button" class="inside-menu-card-link" data-toggle="modal" data-target="#myModal">
+Add to cart
+</button>     
+                             
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 product">
+              <div style="background-color: rgb(236, 229, 226);"class="shadow menu-item-card p-3 mb-3">
+                <img
+                  src="food items/Salads/bionicos-mexican-fruit-bowls.webp"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="inside-menu-card-title">Bionicos Mexican</h1>
+                <p>Price : <span style="text-decoration: line-through; ">250</span>/-  <span style="color:rgba(60, 232, 25, 0.957);font-size:15px;font-weight:bold;">20% off</span></p>
+                <p>Deal Price : <span style="color:rgb(219, 146, 11) ;">200</span>/-</p>
+                <!-- Button trigger modal -->
+<button type="button" class="inside-menu-card-link" data-toggle="modal" data-target="#myModal">
+Add to cart
+</button>
+
+       
+                  
+                  
+                
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 product">
+              <div style="background-color: rgb(236, 229, 226);"class="shadow menu-item-card p-3 mb-3">
+                <img
+                  src="food items/Salads/Autumn Apple Salad.webp"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="inside-menu-card-title">Autumn Apple Salad</h1>
+                <p>Price : <span style="text-decoration: line-through; ">250</span>/-  <span style="color:rgba(60, 232, 25, 0.957);font-size:15px;font-weight:bold;">20% off</span></p>
+                <p>Deal Price : <span style="color:rgb(219, 146, 11) ;">200</span>/-</p>
+                <!-- Button trigger modal -->
+<button type="button" class="inside-menu-card-link" data-toggle="modal" data-target="#myModal">
+Add to cart
+</button>
+                
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 product ">
+              <div style="background-color: rgb(236, 229, 226);"class="shadow menu-item-card p-3 mb-3">
+            
+                <img
+                  src="food items/Salads/Balsamic grape and walnut Salad.webp"
+                  class="menu-item-image w-100"
+                />
+          
+                <h1 class="inside-menu-card-title">Balsamic Grape Salad</h1>
+                <p>Price : <span style="text-decoration: line-through; ">250</span>/-  <span style="color:rgba(60, 232, 25, 0.957);font-size:15px;font-weight:bold;">20% off</span></p>
+                <p>Deal Price : <span style="color:rgb(219, 146, 11) ;">200</span>/-</p>
+                <!-- Button trigger modal -->
+<button type="button" class="inside-menu-card-link" data-toggle="modal" data-target="#myModal">
+Add to cart
+</button>
+
+
+                
+                  
+                  
+                
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 product">
+              <div style="background-color: rgb(236, 229, 226);"class="shadow menu-item-card p-3 mb-3">
+                <img
+                  src="food items/Salads/Berry Fruit Salad.webp"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="inside-menu-card-title">Berry Fruit Salad</h1>
+                <p>Price : <span style="text-decoration: line-through; ">250</span>/-  <span style="color:rgba(60, 232, 25, 0.957);font-size:15px;font-weight:bold;">20% off</span></p>
+                <p>Deal Price : <span style="color:rgb(219, 146, 11) ;">200</span>/-</p>
+                <!-- Button trigger modal -->
+<button  type="button" class="inside-menu-card-link" data-toggle="modal" data-target="#myModal">
+Add to cart
+</button>
+
+      
+                  
+                  
+                
+              </div>
+            </div>
+
+          
+
+        </div>
+      </div>
+      <h1></h1>
+
+    </div>
+
+  </div>
+
+  <style>
+    .modal_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        background-color: rgb(236, 206, 191);
+        width:80px;
+        margin-left:50px;
+    }
+    .modal_button_left {
+        padding: 10px 20px;
+        font-size: 20px;
+        margin: 0 10px;
+        background-color: rgb(232, 57, 13);
+        border:none;
+        outline:none;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+    }
+    .modal_button_right {
+        padding: 10px 20px;
+        font-size: 20px;
+        margin: 0 10px;
+        background-color: rgb(232, 57, 13);
+        border:none;
+        outline:none;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+    .modal_value {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+</style>
+
+  <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="#chickenPattis" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="chickenPattis">No of items</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+    
+    <div class="col-7">
+      <div class="menu-item-card shadow p-3 mb-3">
+        <img id="modal_image"
+          src="food items/Non-veg starters/meat balls.jpg"
+          class="menu-item-image w-100"
+        />
+        <h1 id="modal_name" class="menu-card-title">Chicken Patties</h1>
+        <div class="modal_container">
+          <button class="modal_button_left" id="decrement">-</button>
+          <span class="modal_value" id="value">0</span>
+          <button class="modal_button_right" id="increment">+</button>
+      </div>
+  
+      </div>
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script>
+    let value = 0;
+  
+    document.getElementById('increment').addEventListener('click', () => {
+        value++;
+        document.getElementById('value').textContent = value;
+    });
+  
+    document.getElementById('decrement').addEventListener('click', () => {
+        value--;
+        document.getElementById('value').textContent = value;
+    });
+  </script>
+  <script src="NonVeg.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
